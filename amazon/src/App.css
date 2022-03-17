@@ -13,14 +13,14 @@
 
 .button{
   border: 0;
-  border-radius: 3px;
+  border-radius: 0px 5px 5px 0px;
   font-weight: bold;
-  padding: 8px;
+  padding: 11.6px;
   margin-right: 5px;
 }
-.btn-blue{
-  background-color:rgb(78, 127, 232);
-  color: white;
+.btn-warning{
+  background-color:rgb(254, 189, 105);
+  color: #424242;
 }
 .btn-normal{
   background-color:rgb(255, 255, 255);

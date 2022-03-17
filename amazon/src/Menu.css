@@ -1,12 +1,11 @@
 .container{
-    background-color: rgb(19, 42, 71);
-
+    background-color: rgb(19, 25, 33);
     border-bottom: solid 1px #ccc;
     padding: 10px;
     margin: 0 auto;
 }
 .container .subcontainer{
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
 }
 .container .subcontainer div{
@@ -17,15 +16,17 @@
     color: #fff;
     font-weight: bolder;
     font-size: 22px;
-    width: 100px;
+    width: 200px;
 }
 
 .search{
-    width: 500px;
+    width: 553.5px;
 }
 
 .search input{
-    width: calc(500px - 20px - 10px);
+    border: 0;
+    border-radius:5px;
+    width: calc(600px - 20px - 10px);
     padding: 10px;
     font-size: 16px;
 }
