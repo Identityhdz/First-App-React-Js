@@ -28,9 +28,9 @@ class ItemBook extends React.Component {
                         {
                         this.state.startsRating.map(points => <img src={"star.png"} width="20" />)
                         }
-
                     </p>
-                    Calificación:
+
+                    Ranking:
                     <select value={this.props.rating}>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -39,7 +39,7 @@ class ItemBook extends React.Component {
                         <option value="5">5</option>
                     </select>
                     <div className="actions">
-                            <button> Eliminar </button>
+                            <button> Delete </button>
                     </div>
                 </div>
             </div>

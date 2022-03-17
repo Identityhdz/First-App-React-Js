@@ -2,7 +2,7 @@ import react from 'react';
 
 function Search(props){
     return (
-        <input type="" />
+        <input type="" placeholder="Search Book" />
     )
 }
 

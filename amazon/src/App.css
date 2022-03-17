@@ -18,9 +18,29 @@
   padding: 11.6px;
   margin-right: 5px;
 }
+
 .btn-warning{
   background-color:rgb(254, 189, 105);
   color: #424242;
+}
+
+.btn-blue{
+  border: 0;
+  border-radius: 5px 5px 5px 5px;
+  background-color:rgb(0, 172, 193);
+  color: #f5f5f6;
+}
+
+.button:hover {
+  background-color: #ef9e3b;
+  color: #424242;
+  cursor: pointer;
+}
+
+.button.btn-blue:hover {
+  background-color: #019eaf;
+  color: #f5f5f6;
+  cursor: pointer;
 }
 .btn-normal{
   background-color:rgb(255, 255, 255);
