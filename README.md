@@ -11,7 +11,6 @@ Amazon Books in a fictitious project, with didactic purposes to learn React js t
 
 ## Screenshots
 ![alt text](https://i.imgur.com/C9PgUtt.png)
-Dillinger uses a number of open source projects to work properly:
 
 ## Installation
 
