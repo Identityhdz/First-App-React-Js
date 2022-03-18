@@ -41,7 +41,7 @@ class Menu extends React.Component {
                         {this.props.title}
                     </div>
                     <div className="search">
-                        <Search />
+                        <Search onsearch ={this.props.onsearch} />
                     </div>
                     <div className="actions">
                         <button onClick={this.addBook} type="button" className="button btn-warning"><FontAwesomeIcon icon={faSearch} /></button>
