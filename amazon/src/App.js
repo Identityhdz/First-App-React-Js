@@ -64,7 +64,7 @@ class App extends React.Component {
 
   onUpdateRating = (item) =>{
     let arrayUpdateTemp =  [... this.state.books]
-    const indexToUpdate = arrayUpdateTemp.forEach(item => item.id === item.id)
+    const indexToUpdate = arrayUpdateTemp.findIndex(item2 => item2.id === item.id)
 
     arrayUpdateTemp[indexToUpdate].title = item.title
     arrayUpdateTemp[indexToUpdate].image = item.image
@@ -75,11 +75,19 @@ class App extends React.Component {
 
   }
 
+  onRemove = (id) =>{
+    let arrayRemoveTemp = [... this.state.books]
+    const newArray = arrayRemoveTemp.filter(item2 => item2.id !== id)
+
+    this.setState({books: [... newArray]})
+    this.initBooks()
+  }
+
   render(){
     return (
       <div className="app">
         <Menu title="Amazon Books" onadd={this.onAdd} onsearch={this.onSearch} />
-        <List items={this.state.copyBooks} onSearch={this.onUpdateRating}/>
+        <List items={this.state.copyBooks} onupdaterating={this.onUpdateRating} onremove={this.onRemove}/>
       </div>
     );
 

@@ -14,7 +14,9 @@ function List(props)
                     image = {book.image}
                     rating = {book.rating}
                     
-                     onupdaterating = {props.onupdaterating}
+                    onupdaterating = {props.onupdaterating}
+
+                    onremove = {props.onremove}
                     /> )
             }
         </div>

@@ -23,13 +23,13 @@ class ItemBook extends React.Component {
             startsRating: Array(parseInt(this.props.rating)).fill(0)
         })
     }
-
+ 
     // Funcion se ejecuta cuando el componente se agrega al DOM
-    componentDidMount(){
-        this.setState({
-            startsRating: Array(parseInt(this.props.rating)).fill(0)
-        })
-    }
+    // componentDidMount(){
+    //     this.setState({
+    //         startsRating: Array(parseInt(this.props.rating)).fill(0)
+    //     })
+    // }
 
     onChange = e =>{
         const rating = parseInt(e.target.value)
@@ -42,11 +42,15 @@ class ItemBook extends React.Component {
         this.props.onupdaterating({id:this.state.id, title:this.state.title, image: this.state.image, rating: this.state.rating})
     }
 
+    onRemove = e =>{
+        this.props.onremove(this.props.id)
+    }
+
     render() {
         return(
             <div className="item">
                 <div className="image"><img src={this.props.image} with="100%"></img></div>
-                <div className="title">{this.state.title}</div>
+                <div className="title">{this.props.title}</div>
                 <div className="rating">
                     <p>
                         {
@@ -63,7 +67,7 @@ class ItemBook extends React.Component {
                         <option value="5">5</option>
                     </select>
                     <div className="actions">
-                            <button> Delete </button>
+                            <button onClick={this.onRemove}> Delete </button>
                     </div>
                 </div>
             </div>
