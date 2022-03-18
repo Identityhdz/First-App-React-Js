@@ -23,7 +23,7 @@ Clone project:
 git clone https://github.com/Identityhdz/First-App-React-Js.git
 ```
 
-Open the terminal in the current project directory and start:
+Open the terminal in the amazon folder and start:
 
 ```sh
 npm start
