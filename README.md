@@ -6,7 +6,7 @@ Amazon Books in a fictitious project, with didactic purposes to learn React js t
 
 - Create new book
 - Delete books
-- Edit rating
+- Edit ranking
 - Filter by book name
 
 ## Screenshots
