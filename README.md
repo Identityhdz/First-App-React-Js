@@ -14,7 +14,7 @@ Amazon Books in a fictitious project, with didactic purposes to learn React js t
 
 ## Installation
 
-Amazon books requires [Node.js](https://nodejs.org/) v10+ to run.
+Amazon books requires [Node.js](https://nodejs.org/) v5+ to run.
 
 Clone project:
 
